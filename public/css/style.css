@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,500;0,600;1,100;1,400;1,500&family=Nunito+Sans:opsz@6..12&family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  
+}
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 400px; /* Full width of parent container */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .nav-item:hover .mega-menu {
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .row {
+    display: flex; /* Display columns in a row */
+    justify-content: space-between; /* Distribute columns evenly */
+  }
+  
+  .col {
+    width: 48%; /* Adjust as needed, leaving space for margin or padding */
+  }
+
+  .card-horizontal {
+    display: flex; /* Menggunakan display flex untuk membuat card horizontal */
+    align-items: center; /* Mengatur penjajaran vertikal pada card */
+    padding: 1rem; /* Padding untuk jarak antara card */
+    border: 1px solid #ccc; /* Border untuk card jika diperlukan */
+  }
+  
+  .card-img-horizontal {
+    width: 150px; /* Lebar gambar pada card */
+    height: auto; /* Mengatur ketinggian gambar agar tetap proporsional */
+    margin-right: 1rem; /* Margin kanan untuk memberi jarak antara gambar dan konten */
+  }
+  
+  .card-content {
+    flex: 1; /* Menggunakan flex 1 agar konten mengambil sisa ruang yang tersedia */
+    background: #fff;
+  }
+
+
+  .zoomable-image {
+    transition: transform 0.3s; /* Menambahkan efek transisi smooth */
+    transform-origin: center center; /* Set transform origin to center */
+
+  }
+
+  .zoomable-image:hover {
+    transform: scale(1.2); /* Nilai scale dapat diubah untuk mengatur sejauh mana zoom */
+  }
+
